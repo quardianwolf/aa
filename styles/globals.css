@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '../public/asset/css/jquery.fancybox.min.css';
+@import '../public/asset/css/bootstrap.min.css';
+@import '../public/asset/css/bootstrap-theme.min.css';
+@import '../public/asset/css/themify-icons.css';
+@import '../public/asset/css/zoa-font.css';
+@import '../public/asset/css/font-awesome.min.css';
+@import '../public/asset/css/font-family.css';
+@import '../public/asset/css/slick.css';
+@import '../public/asset/css/slick-theme.css';
+@import '../public/asset/css/style-main.css';
+@import '../public/asset/css/responsive.css';
+
+
+
