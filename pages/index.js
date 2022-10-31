@@ -12,7 +12,7 @@ export default function Home({ products, bannerData, categoryData }) {
             <div className="slider-home2 container-fluid">
               <div className="row">
                 <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                  <div className="text-slider-home2">
+                  <div className="text-slider-home2" key={index}>
                     <p className="number-font uppercase number-year text-right delay2">{banner.tarih}</p>
                     <p className="number-font uppercase text-new relative text-right"><img src="/asset/img/%20slider-home2.png" className="img-responsive absolute delay1" alt="" />
                       <span className="delay2">{banner.slide_text1}</span>
@@ -58,13 +58,13 @@ export default function Home({ products, bannerData, categoryData }) {
         <a href="https://www.instagram.com/fantezidunyam_/" className="delay03"><i className="ti-instagram"></i></a>
       </div>
       <section id='category' className='category'>
-        <div class="show-banner-home2 container">
-          <div class="row flex show-banner-2-home2">
+        <div className="show-banner-home2 container">
+          <div className="row flex show-banner-2-home2">
             {categoryData.map((cat, index) => {
               return (
-                <div class="banner-col-1 clear-space" key={index}>
-                  <div class="relative text-comment">
-                    <a href="#" class="over-hidden"><img src={urlFor(cat.image.asset._ref)} class="img-responsive hover-zoom-out" alt="" /></a>
+                <div className="banner-col-1 clear-space" key={index}>
+                  <div className="relative text-comment">
+                    <a href="#" className="over-hidden"><img src={urlFor(cat.image.asset._ref)} className="img-responsive hover-zoom-out" alt="" /></a>
                   </div>
                 </div>
               )
@@ -73,22 +73,22 @@ export default function Home({ products, bannerData, categoryData }) {
         </div>
       </section>
       <section id='products' className='products'>
-        <div class="similar-home2 container container_180">
-          <div class="row">
-            <h1 class="title-font title-similar">Sizin için önerdiklerimiz</h1>
-            <p class="des-font des-similar space_top_20 space_bot_60">Odanız geceleri cok mu karanlik, Fantezidunyam ile odanız alev alacak!</p>
-            <div class="slick-similar">
-              {products.map((product, index) => {
+        <div className="similar-home2 container container_180">
+          <div className="row">
+            <h1 className="title-font title-similar">Sizin için önerdiklerimiz</h1>
+            <p className="des-font des-similar space_top_20 space_bot_60">Odanız geceleri cok mu karanlik, Fantezidunyam ile odanız alev alacak!</p>
+            <div className="slick-similar">
+              {products.map((product) => {
                 const { image, slug, name, category } = product
                 return (
                   <Link href={`/product/${slug.current}`}>
-                    <div class="designer relative">
-                      <a href={slug} class="inline-block"><img src={urlFor(image && image[0])} class="img-responsive" alt="" /></a>
-                      <div class="overlay-mini absolute delay03"></div>
-                      <div class="absolute button-animate delay03"><button class="text-center"><i class="ti-arrow-top-right delay03"></i></button></div>
-                      <div class="info-similar absolute delay03">
-                        <h3 class="name number-font uppercase text-center">{name}</h3>
-                        <p class="des-font capital text-center">{category}</p>
+                    <div className="designer relative" key={product.id}>
+                      <a href={slug} className="inline-block"><img  src={urlFor(image && image[0])} className="img-responsive" alt="" /></a>
+                      <div className="overlay-mini absolute delay03"></div>
+                      <div className="absolute button-animate delay03"><button className="text-center"><i className="ti-arrow-top-right delay03"></i></button></div>
+                      <div className="info-similar absolute delay03">
+                        <h3 className="name number-font uppercase text-center">{name}</h3>
+                        <p className="des-font capital text-center">{category}</p>
                       </div>
                     </div>
                   </Link>
