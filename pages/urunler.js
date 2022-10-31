@@ -38,16 +38,7 @@ const urunler = ({ products }) => {
 												<a href={slug}><img key={index} src={urlFor(image && image[0])} className="img-responsive" alt="" height={250} width={250} /></a>
 
 												<figure className="absolute uppercase label-new title-font text-center">YENİ</figure>
-												<div className="product-icon text-center absolute">
-													<form method="post" action="/cart/add" enctype="multipart/form-data" className="inline-block icon-addcart">
-														<input type="hidden" name="id" value="" />
-														<button type="submit" name="add" className="enj-add-to-cart-btn btn-default"><i className="ti-bag"></i></button>
-													</form>
-													<a href="#" className="icon-heart inline-block"><i className="ti-heart"></i></a>
-													<a href="#" className="engoj_btn_quickview icon-quickview inline-block" title="quickview">
-														<i className="ti-more-alt"></i>
-													</a>
-												</div>
+												
 											</div>
 											<div className="product-info">
 												<div className="info-product text-center">
