@@ -57,21 +57,6 @@ export default function Home({ products, bannerData, categoryData }) {
       <div className="flex fixed right social-fixed delay03">
         <a href="https://www.instagram.com/fantezidunyam_/" className="delay03"><i className="ti-instagram"></i></a>
       </div>
-      <section id='category' className='category'>
-        <div className="show-banner-home2 container">
-          <div className="row flex show-banner-2-home2">
-            {categoryData.map((cat, index) => {
-              return (
-                <div className="banner-col-1 clear-space" key={index}>
-                  <div className="relative text-comment">
-                    <a href="#" className="over-hidden"><img src={urlFor(cat.image.asset._ref)} className="img-responsive hover-zoom-out" alt="" /></a>
-                  </div>
-                </div>
-              )
-            })}
-          </div>
-        </div>
-      </section>
       <section id='products' className='products'>
         <div className="similar-home2 container container_180">
           <div className="row">
