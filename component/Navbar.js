@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container space_top_bot_55 delay03" id="menu-header">
         <div className="row flex">
           <div className="col-lg-1 col-md-2 col-sm-6 col-xs-5">
-            <a href="/"><img src="/asset/img/logo2.png" height="160px" width="320px" alt="" className='logoresim' /></a>
+            <a href="/"><img src="/asset/img/logobeyaz.png" height="160px" width="320px" alt="" className='logoresim' /></a>
           </div>
           <div className="col-lg-8 col-md-7 hidden-sm hidden-xs">
             <ul className="nav navbar-nav menu-font menu-main menu-home2">
