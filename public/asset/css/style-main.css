@@ -1893,7 +1893,7 @@ header {
   z-index: 20; }
 
 .slider-home2 {
-  background-image: url("../img/bg-slider-home2.jpg");
+  background-image: url("../img/bg0slider.jpg");
   background-position: 0 0;
   height: auto;
   background-repeat: no-repeat; }
@@ -3627,5 +3627,8 @@ header {
 }
 .logoresim{
   margin-top: -48px !important;
+}
+.slider-home2{
+  color: white;
 }
 /*# sourceMappingURL=style-main.css.map */
